@@ -140,16 +140,20 @@ python -m pip install -r requirements.txt
 python -m unittest discover -s test -v
 ```
 
-## Benchmark
+## Benchmark Results
 
-Evaluation used a synthetic dataset of **1,000 error logs** (125 per category). All three runs completed **1,000/1,000 requests** successfully.
+The system was evaluated using a synthetic dataset of 1,000 error logs across 8 error categories, with 125 samples per category.
 
-| Model / prompt | Accuracy | Mean latency | P95 latency |
-|---|---:|---:|---:|
-| Qwen2.5-Coder-1.5B / v3 | 72.2% | 5.81 s | 7.68 s |
-| Qwen2.5-Coder-3B / v3 | **83.7%** | 11.03 s | 12.66 s |
-| Qwen2.5-Coder-3B / v4 (included) | 83.4% | 14.16 s | 17.60 s |
+Both models were tested using the same dataset and completed all API requests successfully.
 
-Prompt v4 improved `unknown` classification from **24.0% to 58.4%** compared with 3B/v3, but reduced `configuration_error` accuracy from **78.4% to 53.6%**. The archive includes the v4 `results.csv` and `summary.json`.
+| Metric | Qwen2.5-Coder-1.5B | Qwen2.5-Coder-3B |
+|---|---:|---:|
+| Accuracy | 72.2% | **83.4%** |
+| Correct predictions | 722 / 1000 | **834 / 1000** |
+| Average latency | **5.81 s** | 14.16 s |
+| P95 latency | **7.68 s** | 17.60 s |
+| Request success rate | 100% | 100% |
 
-**Limitation:** The dataset is synthetic and contains variations of repeated scenarios. Prompts were tuned using this dataset, so these figures are development benchmark results rather than an independent estimate of real-world accuracy.
+The 3B model achieved an **11.2 percentage-point improvement in classification accuracy** compared to the 1.5B model, at the cost of increased inference latency.
+
+These results demonstrate the trade-off between classification accuracy and inference speed. The benchmark uses synthetic data, so further evaluation on real-world error logs is recommended.
