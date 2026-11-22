@@ -1,0 +1,1315 @@
+{
+  "generated_at_utc": "2026-11-22T14:40:09.421837+00:00",
+  "api_url": "http://raspberry:8000",
+  "total_cases": 1000,
+  "completed_cases": 1000,
+  "successful_requests": 1000,
+  "correct_predictions": 834,
+  "request_success_rate": 1.0,
+  "overall_accuracy": 0.834,
+  "accuracy_on_successful_responses": 0.834,
+  "latency_seconds": {
+    "mean": 14.156,
+    "p50": 13.9,
+    "p95": 17.596,
+    "min": 10.081,
+    "max": 57.771,
+    "note": "Includes failed requests; measured end-to-end on Windows"
+  },
+  "per_class": {
+    "configuration_error": {
+      "tested": 125,
+      "correct": 67,
+      "accuracy": 0.536
+    },
+    "dependency_error": {
+      "tested": 125,
+      "correct": 125,
+      "accuracy": 1.0
+    },
+    "network_error": {
+      "tested": 125,
+      "correct": 120,
+      "accuracy": 0.96
+    },
+    "resource_error": {
+      "tested": 125,
+      "correct": 119,
+      "accuracy": 0.952
+    },
+    "runtime_error": {
+      "tested": 125,
+      "correct": 92,
+      "accuracy": 0.736
+    },
+    "syntax_error": {
+      "tested": 125,
+      "correct": 125,
+      "accuracy": 1.0
+    },
+    "type_error": {
+      "tested": 125,
+      "correct": 113,
+      "accuracy": 0.904
+    },
+    "unknown": {
+      "tested": 125,
+      "correct": 73,
+      "accuracy": 0.584
+    }
+  },
+  "confusion_matrix": {
+    "configuration_error": {
+      "configuration_error": 67,
+      "dependency_error": 0,
+      "network_error": 0,
+      "resource_error": 0,
+      "runtime_error": 0,
+      "syntax_error": 58,
+      "type_error": 0,
+      "unknown": 0,
+      "__error__": 0
+    },
+    "dependency_error": {
+      "configuration_error": 0,
+      "dependency_error": 125,
+      "network_error": 0,
+      "resource_error": 0,
+      "runtime_error": 0,
+      "syntax_error": 0,
+      "type_error": 0,
+      "unknown": 0,
+      "__error__": 0
+    },
+    "network_error": {
+      "configuration_error": 0,
+      "dependency_error": 0,
+      "network_error": 120,
+      "resource_error": 5,
+      "runtime_error": 0,
+      "syntax_error": 0,
+      "type_error": 0,
+      "unknown": 0,
+      "__error__": 0
+    },
+    "resource_error": {
+      "configuration_error": 0,
+      "dependency_error": 0,
+      "network_error": 0,
+      "resource_error": 119,
+      "runtime_error": 6,
+      "syntax_error": 0,
+      "type_error": 0,
+      "unknown": 0,
+      "__error__": 0
+    },
+    "runtime_error": {
+      "configuration_error": 8,
+      "dependency_error": 7,
+      "network_error": 0,
+      "resource_error": 0,
+      "runtime_error": 92,
+      "syntax_error": 11,
+      "type_error": 7,
+      "unknown": 0,
+      "__error__": 0
+    },
+    "syntax_error": {
+      "configuration_error": 0,
+      "dependency_error": 0,
+      "network_error": 0,
+      "resource_error": 0,
+      "runtime_error": 0,
+      "syntax_error": 125,
+      "type_error": 0,
+      "unknown": 0,
+      "__error__": 0
+    },
+    "type_error": {
+      "configuration_error": 0,
+      "dependency_error": 0,
+      "network_error": 0,
+      "resource_error": 0,
+      "runtime_error": 0,
+      "syntax_error": 12,
+      "type_error": 113,
+      "unknown": 0,
+      "__error__": 0
+    },
+    "unknown": {
+      "configuration_error": 0,
+      "dependency_error": 0,
+      "network_error": 2,
+      "resource_error": 0,
+      "runtime_error": 50,
+      "syntax_error": 0,
+      "type_error": 0,
+      "unknown": 73,
+      "__error__": 0
+    }
+  },
+  "failures": [
+    {
+      "id": "H0005",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0009",
+      "expected": "type_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0011",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0020",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0025",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0026",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0041",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0044",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0048",
+      "expected": "runtime_error",
+      "predicted": "dependency_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0050",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0053",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0060",
+      "expected": "runtime_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0061",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0067",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0074",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0075",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0080",
+      "expected": "runtime_error",
+      "predicted": "type_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0083",
+      "expected": "runtime_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0087",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0088",
+      "expected": "type_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0089",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0092",
+      "expected": "runtime_error",
+      "predicted": "type_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0095",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0101",
+      "expected": "type_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0111",
+      "expected": "runtime_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0114",
+      "expected": "runtime_error",
+      "predicted": "dependency_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0117",
+      "expected": "type_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0125",
+      "expected": "runtime_error",
+      "predicted": "type_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0137",
+      "expected": "runtime_error",
+      "predicted": "type_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0138",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0146",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0160",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0162",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0165",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0166",
+      "expected": "resource_error",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0170",
+      "expected": "type_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0178",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0182",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0191",
+      "expected": "runtime_error",
+      "predicted": "configuration_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0199",
+      "expected": "runtime_error",
+      "predicted": "configuration_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0205",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0208",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0210",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0212",
+      "expected": "resource_error",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0231",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0234",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0241",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0246",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0262",
+      "expected": "runtime_error",
+      "predicted": "configuration_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0266",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0275",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0277",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0297",
+      "expected": "runtime_error",
+      "predicted": "configuration_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0298",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0302",
+      "expected": "runtime_error",
+      "predicted": "type_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0305",
+      "expected": "runtime_error",
+      "predicted": "configuration_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0308",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0309",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0310",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0320",
+      "expected": "runtime_error",
+      "predicted": "dependency_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0329",
+      "expected": "runtime_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0333",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0339",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0344",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0352",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0361",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0363",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0365",
+      "expected": "type_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0368",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0380",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0382",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0394",
+      "expected": "resource_error",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0395",
+      "expected": "unknown",
+      "predicted": "network_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0401",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0412",
+      "expected": "runtime_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0449",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0451",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0453",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0457",
+      "expected": "network_error",
+      "predicted": "resource_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0468",
+      "expected": "runtime_error",
+      "predicted": "dependency_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0473",
+      "expected": "runtime_error",
+      "predicted": "configuration_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0479",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0485",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0486",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0488",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0494",
+      "expected": "runtime_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0496",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0503",
+      "expected": "resource_error",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0506",
+      "expected": "network_error",
+      "predicted": "resource_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0507",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0510",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0517",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0526",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0542",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0543",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0552",
+      "expected": "network_error",
+      "predicted": "resource_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0557",
+      "expected": "runtime_error",
+      "predicted": "dependency_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0574",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0577",
+      "expected": "runtime_error",
+      "predicted": "type_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0585",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0601",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0609",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0616",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0617",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0620",
+      "expected": "type_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0634",
+      "expected": "runtime_error",
+      "predicted": "type_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0638",
+      "expected": "type_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0650",
+      "expected": "runtime_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0652",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0655",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0660",
+      "expected": "runtime_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0668",
+      "expected": "runtime_error",
+      "predicted": "dependency_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0679",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0680",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0695",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0702",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0742",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0744",
+      "expected": "resource_error",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0746",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0754",
+      "expected": "runtime_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0758",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0760",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0762",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0763",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0766",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0767",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0770",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0782",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0799",
+      "expected": "runtime_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0801",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0804",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0810",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0812",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0821",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0822",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0832",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0837",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0847",
+      "expected": "type_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0848",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0853",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0868",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0870",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0874",
+      "expected": "runtime_error",
+      "predicted": "configuration_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0875",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0878",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0879",
+      "expected": "runtime_error",
+      "predicted": "configuration_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0884",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0886",
+      "expected": "resource_error",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0896",
+      "expected": "unknown",
+      "predicted": "network_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0908",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0911",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0923",
+      "expected": "network_error",
+      "predicted": "resource_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0927",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0929",
+      "expected": "runtime_error",
+      "predicted": "dependency_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0933",
+      "expected": "type_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0934",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0936",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0945",
+      "expected": "type_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0948",
+      "expected": "type_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0964",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0969",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0971",
+      "expected": "runtime_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0974",
+      "expected": "unknown",
+      "predicted": "runtime_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0989",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0995",
+      "expected": "configuration_error",
+      "predicted": "syntax_error",
+      "status": "ok",
+      "error_detail": ""
+    },
+    {
+      "id": "H0999",
+      "expected": "network_error",
+      "predicted": "resource_error",
+      "status": "ok",
+      "error_detail": ""
+    }
+  ]
+}

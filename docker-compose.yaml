@@ -1,0 +1,41 @@
+
+services:
+  llm:
+    image: ghcr.io/ggml-org/llama.cpp:server
+    restart: unless-stopped
+
+    volumes:
+      - ./models:/models:ro
+
+    command:
+      - -m
+      - /models/qwen2.5-coder-3b-q4_k_m.gguf
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8080"
+      - -c
+      - "2048"
+      - -t
+      - "4"
+      - -ngl
+      - "0"
+      - -np
+      - "1"
+
+  api:
+    build: .
+    restart: unless-stopped
+
+    ports:
+      - "8000:8000"
+
+    environment:
+      LLM_URL: http://llm:8080/v1/chat/completions
+      LLM_TIMEOUT: "120"
+      MAX_CONCURRENT: "1"
+      MODEL_NAME: local
+      MAX_TOKENS: "384"
+
+    depends_on:
+      - llm
